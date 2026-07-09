@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>인류최후의 직장생활 — 뉴스레터 구독</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+  input:focus { outline: 2px solid #7B97D8; }
+  #submitBtn:hover { background:#3D4A78; }
+  #submitBtn:disabled { background:#9AAAD6; cursor:default; }
+</style>
+</head>
+<body style="margin:0; padding:0; background-color:#E8E2D4;">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#E8E2D4;">
+<tbody><tr><td align="center" style="padding:40px 12px;">
+
+  <table role="presentation" width="520" cellpadding="0" cellspacing="0" style="max-width:520px; width:100%; background-color:#F3EDE0;">
+
+    <!-- 히어로 -->
+    <tbody><tr><td style="background-color:#7B97D8; text-align:center; padding:0;">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0.fpng/?fname=http://t1.kakaocdn.net/brunch/service/user/bwS/image/Ug8WMHodI4OWkoe9K8ciWo94KR8.png" alt="에코백을 든 사람 일러스트" width="340" style="display:block; width:70%; max-width:340px; height:auto; margin:0 auto;">
+      <div style="padding:0 32px 30px 32px;">
+        <div style="font-family:'Noto Serif KR',serif; font-size:11px; letter-spacing:3px; color:#F3EDE0; opacity:0.85; padding-bottom:10px;">THE LAST EMPLOYEE</div>
+        <div id="heroTitle" style="font-family:'Noto Serif KR',serif; font-size:26px; line-height:1.4; font-weight:700; color:#FFFFFF;">인류최후의 직장생활</div>
+        <div style="font-family:'Noto Serif KR',serif; font-size:14px; color:#F3EDE0; padding-top:10px; opacity:0.9;">매주 목요일, 엉캔이 씁니다</div>
+      </div>
+    </td></tr>
+
+    <!-- 소개 -->
+    <tr><td style="padding:34px 44px 0 44px;">
+      <p style="font-family:'Noto Serif KR',serif; font-size:15px; line-height:1.9; color:#2E3A63; margin:0; text-align:center;">회사에는 매뉴얼이 있지만&nbsp;<div>직장생활에는 정답이 없습니다.&nbsp;</div><div>힘들고 갑갑할 때 '나만 이런 건 아니구나' 하는</div><div>위안을 드리고 싶습니다.&nbsp;</div><div>매주 한 편의 에세이로 작은 인사이트를 전합니다.&nbsp;&nbsp;</div></p>
+    </td></tr>
+
+    <!-- 폼 -->
+    <tr><td style="padding:30px 44px 0 44px;">
+      <form id="subForm">
+        <label style="display:block; font-family:'Noto Serif KR',serif; font-size:13px; font-weight:600; color:#2E3A63; padding-bottom:6px;"><span>이메일</span> <span style="color:#C79A4B;">*</span></label>
+        <input id="email" type="email" required="" placeholder="name@example.com" style="box-sizing:border-box; width:100%; border:1px solid #C9BFA9; background:#FFFFFF; padding:13px 14px; font-family:'Noto Sans KR',sans-serif; font-size:15px; color:#2E3A63;">
+
+        <label style="display:block; font-family:'Noto Serif KR',serif; font-size:13px; font-weight:600; color:#2E3A63; padding:18px 0 6px 0;"><span>이름 또는 닉네임</span></label>
+        <input id="name" type="text" placeholder="선택 사항" style="box-sizing:border-box; width:100%; border:1px solid #C9BFA9; background:#FFFFFF; padding:13px 14px; font-family:'Noto Sans KR',sans-serif; font-size:15px; color:#2E3A63;">
+
+        <label style="display:flex; align-items:flex-start; gap:8px; font-family:'Noto Sans KR',sans-serif; font-size:12px; line-height:1.7; color:#4A5578; padding-top:16px; cursor:pointer;">
+          <input id="consent" type="checkbox" required="" style="margin-top:3px;">
+          <span>뉴스레터 발송을 위한 이메일 수집에 동의합니다. 수집된 정보는 발송 외 목적으로 쓰지 않으며, 언제든 수신 거부로 삭제 요청할 수 있습니다.</span>
+        </label>
+
+        <button id="submitBtn" type="submit" style="box-sizing:border-box; width:100%; margin-top:22px; background:#2E3A63; color:#F3EDE0; font-family:'Noto Sans KR',sans-serif; font-size:15px; font-weight:700; letter-spacing:2px; border:none; padding:16px; cursor:pointer;">구독하기</button>
+      </form>
+
+      
+      <div id="thanks" style="display: none; text-align: center; padding: 10px 0px 4px;">
+        <div style="font-family:'Noto Serif KR',serif; font-size:20px; font-weight:700; color:#2E3A63; padding-bottom:8px;">구독 신청이 완료되었습니다</div>
+        <div style="font-family:'Noto Sans KR',sans-serif; font-size:14px; line-height:1.8; color:#4A5578;">다음 목요일, 새 연재와 함께 찾아뵐게요.<br>그동안 지난 이야기가 궁금하다면 —</div>
+        <a href="https://brunch.co.kr/brunchbook/thelastemployee" target="_blank" style="display:inline-block; margin-top:16px; font-family:'Noto Sans KR',sans-serif; font-size:14px; font-weight:700; color:#2E3A63; text-decoration:none; border-bottom:2px solid #C79A4B; padding-bottom:2px;">브런치에서 연재 몰아보기 →</a>
+      </div>
+    </td></tr>
+
+    <!-- 푸터 -->
+    <tr><td style="padding:34px 44px 30px 44px; text-align:center;">
+      <div style="border-top:1px solid #D8CFBB; padding-top:22px; font-family:'Noto Sans KR',sans-serif; font-size:12px; color:#9A9078; line-height:1.8;">
+        <a href="https://brunch.co.kr/@sunkim" target="_blank" style="color:#7B97D8; text-decoration:none;">brunch.co.kr/@sunkim</a> · <span>문의 wakeupliaju@gmail.com</span>
+      </div>
+    </td></tr>
+
+  </tbody></table>
+
+</td></tr>
+</tbody></table>
+
+<script>
+
+var CONFIG = {
+  FORM_ID: "1FAIpQLScnEVJvOxPdJCP1l7PyexeGXyO0Ep7RFpWCtk-BTZo7YTk6Vg",
+  EMAIL_ENTRY: "entry.991216422",
+  NAME_ENTRY: "entry.1440478855"
+};
+document.getElementById('subForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var btn = document.getElementById('submitBtn');
+  btn.disabled = true; btn.textContent = '신청 중…';
+  var data = new FormData();
+  data.append(CONFIG.EMAIL_ENTRY, document.getElementById('email').value);
+  if (CONFIG.NAME_ENTRY) data.append(CONFIG.NAME_ENTRY, document.getElementById('name').value);
+  fetch('https://docs.google.com/forms/d/e/' + CONFIG.FORM_ID + '/formResponse', {
+    method: 'POST', mode: 'no-cors', body: data
+  }).finally(function(){
+    document.getElementById('subForm').style.display = 'none';
+    document.getElementById('thanks').style.display = 'block';
+  });
+});
+
+</script>
+</body>
+</html>
